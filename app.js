@@ -16,8 +16,6 @@ const __dirname = path.dirname(__filename);
 // This uses the openweathermap api (https://home.openweathermap.org/api_keys). You will need to create an account and generate an API key.  
 import { weatherApiKey } from "./apikeys.js";
 
-console.log(weatherApiKey);
-
 // -------------------------------------------------------------
 // ---------------------- Listening ----------------------------
 // -------------------------------------------------------------
@@ -35,10 +33,16 @@ app.get('/', (req, res) => {
     const weatherRequest = "https://api.openweathermap.org/data/2.5/weather?units=imperial&q=Miami&appid=" + weatherApiKey;
     https.get(weatherRequest, (weatherResponse) => {
         console.log('statusCode:', weatherResponse.statusCode);
+        console.log('statusMessage:', weatherResponse.statusMessage);
         console.log('headers:', weatherResponse.headers);
 
         weatherResponse.on('data', (d) => {
-            process.stdout.write(d);
+            var weatherData = JSON.parse(d);
+            console.log(weatherData);
+            var temp = weatherData.main.temp;
+            console.log("temperature: " + temp + "F");
+            var desc = weatherData.weather[0].description;
+            console.log("description: " + desc);
         });
 
     }).on('error', (e) => {
