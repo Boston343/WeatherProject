@@ -8,7 +8,10 @@ Weather App using an API. Used while learning Express.js and APIs.
 
 -   OpenWeatherMap API
     -   You will need to create an account and generate a free API key. https://home.openweathermap.org/api_keys.
-    -   Next create a file in the `WeatherProject` folder called `apikeys.js` and put in it the line `export const weatherApiKey = "[your api key here]";`
+    -   Next create a file in the `WeatherProject` folder called `apikeys.js` and put in it the line 
+    ```javascript
+    export const weatherApiKey = "your api key here";
+    ```
 -   Express.js
     -   Inside project run `npm install express`
 -   Body Parser
