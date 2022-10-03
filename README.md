@@ -1,8 +1,6 @@
 # Weather Project
 
-Weather App using an API. Used while learning Express.js and APIs.
-
--------- the below has not yet been updated --------
+Weather App using an API. Used while learning Express.js and interacting with APIs.
 
 ## Dependencies
 
@@ -16,6 +14,8 @@ Weather App using an API. Used while learning Express.js and APIs.
     -   Inside project run `npm install express`
 -   Body Parser
     -   Inside project run `npm install body-parser`
+
+-------- the below has not yet been updated --------
 
 ## Includes
 
