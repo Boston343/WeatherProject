@@ -15,10 +15,10 @@ Weather App using an API. Used while learning Express.js and interacting with AP
 -   Body Parser
     -   Inside project run `npm install body-parser`
 
--------- the below has not yet been updated --------
-
 ## Includes
 
+-   API
+    - OpenWeatherMap API usage example
 -   JS includes
     -   express
     -   body-parser
