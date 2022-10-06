@@ -24,6 +24,7 @@ Weather App using an API. Used while learning Express.js and interacting with AP
     -   body-parser
     -   path
     -   url
+    -   https
 -   Data retreival and manipulation
     -   Serving up HTML files
     -   Retreive data from form, manipulate, and respond to user
